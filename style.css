@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  margin-top: 10%;
+}
+.container .image img {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: auto;
+  height: 400px;
+}
+.container .text {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.8rem 3rem;
+  width: 250px;
+  height: auto;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container .text .perfume {
+  color: hsl(228deg, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.2rem;
+}
+.container .text .product-name {
+  color: hsl(212deg, 21%, 14%);
+  padding-top: 1.3rem 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: "Fraunces", serif;
+}
+.container .text p {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 1.4rem;
+  padding: 1.4rem 0;
+}
+.container .text .pricing .price {
+  font-size: 2rem;
+  color: hsl(158deg, 36%, 37%);
+  font-weight: 900;
+}
+.container .text .pricing .mini-pricing {
+  padding: 0 1.4rem;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+.container .text button {
+  border: 2px solid hsl(158deg, 36%, 37%);
+  background: hsl(158deg, 36%, 37%);
+  margin: 1.3rem 0;
+  padding: 0.5rem 4rem;
+  border-radius: 0.5rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .container img {
+    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 0rem;
+  }
+}/*# sourceMappingURL=style.css.map */
